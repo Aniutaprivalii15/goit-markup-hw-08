@@ -1,0 +1,34 @@
+.business-client__list {
+    --item: 6;
+    --indent: 30px;
+}
+
+.business-client__item {
+    fill: #afb1b8;
+}
+
+.business-client__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+    width: 100%;
+    height: 92px;
+    color: #afb1b8;
+
+    transition: color var(--anim), border-color var(--anim);
+}
+
+.business-client__icon {
+    fill: currentColor;
+}
+
+.business-client__link:hover,
+.business-client__link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
