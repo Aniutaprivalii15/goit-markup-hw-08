@@ -5,13 +5,23 @@
 }
 
 .benefits-list {
-    --item: 4;
-    --indent: 30px;
+    @media screen and (min-width: 480px) {
+        --item: 1;
+        --indent: 30px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        --item: 2;
+        --indent: 30px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        --item: 4;
+        --indent: 30px;
+    }
 }
 
 .benefits-bloc__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +39,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .benefits-inform__text {

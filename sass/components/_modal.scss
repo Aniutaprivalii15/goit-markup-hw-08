@@ -5,16 +5,31 @@
 
     transform: translate(-50%, -50%) scale(1) rotate(0);
 
-    padding: 40px;
+    padding: 15px;
 
-    width: 528px;
-    height: 581px;
+    width: 95%;
+    height: 600px;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 100ms;
+
+    @media screen and (min-width: 480px) {
+        padding: 15px;
+        width: 450px;
+        height: 609px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        padding: 40px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        height: 581px;
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -79,11 +94,19 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    @media screen and (min-width: 320px) {
+            margin-top: 25px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal-form-label {
@@ -99,6 +122,10 @@
     margin-top: 4px;
 
     height: 40px;
+
+    @media screen and (min-width: 320px) {
+        height: 30px;
+    }
 }
 
 .modal-form-input {
@@ -141,10 +168,14 @@
 
 .modal-form-comment::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+    }
 }
 
 .modal-form-input:focus {
@@ -166,14 +197,21 @@
 .modal-form-check__text {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
 
     color: var(--after-title-color);
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .modal-form-check__text a {

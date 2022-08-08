@@ -52,6 +52,60 @@
                         </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-open-btn" type="button">
+                <svg class="menu-open-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-open-btn"></use>
+                </svg>
+            </button>
+            
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <button class="mob-menu-close-btn" type="button">
+                        <svg class="mob-menu-close-btn__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-modal-close"></use>
+                        </svg>
+                    </button>
+            
+                    <ul class="mob-menu__site-nav list">
+                        <li class="mob-menu__site-nav-item">
+                            <a class="mob-menu__site-nav-link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mob-menu__site-nav-item">
+                            <a class="mob-menu__site-nav-link link current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mob-menu__site-nav-item">
+                            <a class="mob-menu__site-nav-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mob-menu__footer-position">
+                        <ul class="mob-menu__contact list">
+                            <li class="mob-menu__contact-tel">
+                                <a class="link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+                            </li>
+                            <li class="mob-menu__contact-mail">
+                                <a class="mob-menu__contact-link link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="mob-menu__soc list">
+                            <li class="mob-menu__soc-iteam">
+                                <a class="mob-menu__soc-link" href="">Instagram</a>
+                            </li>
+                            <li class="mob-menu__soc-iteam">
+                                <a class="mob-menu__soc-link" href="">Twitter</a>
+                            </li>
+                            <li class="mob-menu__soc-iteam">
+                                <a class="mob-menu__soc-link" href="">Facebook</a>
+                            </li>
+                            <li class="mob-menu__soc-iteam">
+                                <a class="mob-menu__soc-link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -84,7 +138,8 @@
                         <li class="portfolio-item card-set__item ">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                                 <div class="portfolio-anim">
-                                    <img src="./images/img.technology.png" alt="Технокряк" width="370" height="294">
+                                    <img  srcset="./images/portfolio/techno.jpg 1x, ./images/portfolio/techno-2x.jpg 2x"
+                                    src="./images/portfolio/techno.jpg" alt="Технокряк" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                         получить
@@ -100,7 +155,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                                 <div class="portfolio-anim">
-                                    <img src="./images/img.poster.png" alt=" Постер New Orlean vs Golden Star" width="370" height="294">
+                                    <img srcset="./images/portfolio/new-orlean.jpg    1x, ./images/portfolio/new-orlean-2x.jpg 2x"
+                                    src="./images/portfolio/new-orlean.jpg" alt=" Постер New Orlean vs Golden Star" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -114,7 +170,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                                 <div class="portfolio-anim">
-                                    <img src="./images/img.seafood.png" alt="Ресторан Seafood" width="370" height="294">
+                                    <img srcset="./images/portfolio/seafood.jpg 1x, ./images/portfolio/seafood-2x.jpg 2x"
+                                    src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -128,7 +185,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                             <div class="portfolio-anim">
-                                <img src="./images/img.project.prime.png" alt="Проект Prime" width="370" height="294">
+                                <img srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime-2x.jpg 2x"
+                                src="./images/portfolio/prime.jpg" alt="Проект Prime" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -142,7 +200,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                             <div class="portfolio-anim">
-                                <img src="./images/img.project.box.png" alt="Проект Boxes" width="370" height="294">
+                                <img srcset="./images/portfolio/boxes.jpg 1x, ./images/portfolio/boxes-2x.jpg 2x"
+                                src="./images/portfolio/boxes.jpg" alt="Проект Boxes" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -156,7 +215,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                             <div class="portfolio-anim">
-                                <img src="./images/img.inspiration.png" alt="Inspiration has no Borders" width="370" height="294">
+                                <img srcset="./images/portfolio/inspiration.jpg    1x, ./images/portfolio/inspiration-2x.jpg 2x"
+                                src="./images/portfolio/inspiration.jpg" alt="Inspiration has no Borders" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -170,7 +230,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                             <div class="portfolio-anim">
-                                <img src="./images/img.edition.png" alt="Издание Limited Edition" width="370" height="294">
+                                <img srcset="./images/portfolio/limited-edition.jpg    1x, ./images/portfolio/limited-edition-2x.jpg 2x"
+                                src="./images/portfolio/limited-edition.jpg" alt="Издание Limited Edition" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -184,7 +245,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                             <div class="portfolio-anim">
-                                <img src="./images/img.project.lab.png" alt="Проект LAB" width="370" height="294">
+                                <img srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab-2x.jpg 2x"
+                                src="./images/portfolio/lab.jpg" alt="Проект LAB" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>
@@ -198,7 +260,8 @@
                         <li class="portfolio-item card-set__item">
                             <a class=" portfolio-item__link" rel="preconnect" href="/">
                                     <div class="portfolio-anim">
-                                <img src="./images/img.growing.business.png" alt="Growing Business" width="370" height="294">
+                                <img srcset="./images/portfolio/growing-business.jpg    1x, ./images/portfolio/growing-business-2x.jpg 2x"
+                                src="./images/portfolio/growing-business.jpg" alt="Growing Business" width="370" height="294">
                                     <p class="portfolio-anim-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                     </p>

@@ -1,6 +1,20 @@
 .portfolio-item {
-    --item: 3;
-    --indent: 30px;
+    cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+        --item: 1;
+        --indent: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        --item: 2;
+        --indent: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --item: 3;
+        --indent: 30px;
+    }
 }
 
 .portfolio-item__link {
