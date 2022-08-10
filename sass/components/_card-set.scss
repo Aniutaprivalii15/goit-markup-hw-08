@@ -20,7 +20,13 @@
     margin: calc(var(--indent) / 2);
 }
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: 320px) and (max-width: 450px) {
+
+    }
+    @media screen and (min-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     margin: calc(-1 * var(--indent) / 2);
 }

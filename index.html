@@ -8,7 +8,7 @@
     <!-- fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"  rel="stylesheet">
     <!-- fonts end -->
     <!-- normalize start -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- normalize end -->
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -42,13 +42,13 @@
             <ul class="header-contact list">
                 <li class="header-contact__item">
                     <a href="mailto:info@devstudio.com" class="header-contact__link link">
-                        <svg class="header__icon" width="16" height="16">
+                        <svg class="header__icon" width="14" height="10">
                         <use href="./images/icons.svg#icon-mail"></use>
                     </svg>info@devstudio.com </a>
                 </li>
                 <li class="header-contact__item">
                     <a href="tel:+380961111111" class="header-contact__link link">
-                        <svg class="header__icon" width="16" height="16">
+                        <svg class="header__icon" width="10" height="14">
                         <use href="./images/icons.svg#icon-tel"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>
@@ -117,7 +117,7 @@
 
         <section class="solution-section hero">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения<br/>для вашего бизнеса</h1>
                 <button class="btn-clik" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -199,8 +199,8 @@
                 <h2 class="main-text-title">Наша команда</h2>
                 <ul class="team__list card-set list">
                     <li class="team__item card-set__item">
-                        <img srcset="./images/team/img-1.jpg 1x, ./images/team/img-1-2x.jpg 2x"
-                        src="./images/team/img-1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <img srcset="./images/team/img-1.jpg 1x,  ./images/team/img-1-2x.jpg 2x"
+                        src="./images/team/img-1.jpg" alt="Игорь Демьяненко" width="450" height="460">
                             <div class="team__wrapper">
                                 <h3 class="team-colg__name">Игорь Демьяненко</h3> 
                                 <p class="team-work__name">Product Designer</p>
@@ -238,7 +238,7 @@
                     </li>
                     <li class="team__item card-set__item">
                         <img srcset="./images/team/img-2.jpg 1x, ./images/team/img-2-2x.jpg 2x"
-                         src="./images/team/img-2.jpg" alt="Ольга Репинa" width="270" height="260">
+                         src="./images/team/img-2.jpg" alt="Ольга Репинa" width="450" height="460">
                             <div class="team__wrapper">
                                 <h3 class="team-colg__name">Ольга Репина</h3> 
                                 <p class="team-work__name">Frontend Developer</p>
@@ -276,7 +276,7 @@
                     </li>
                     <li class="team__item card-set__item">
                         <img srcset="./images/team/img-3.jpg 1x, ./images/team/img-3-2x.jpg 2x"
-                        src="./images/team/img-3.jpg" alt="Николай Тарасов" width="270" height="260">
+                        src="./images/team/img-3.jpg" alt="Николай Тарасов" width="450" height="460">
                             <div class="team__wrapper">
                                 <h3 class="team-colg__name">Николай Тарасов</h3> 
                                 <p class="team-work__name">Marketing</p>
@@ -314,7 +314,7 @@
                     </li>
                     <li class="team__item card-set__item">
                         <img srcset="./images/team/img-4.jpg 1x, ./images/team/img-4-2x.jpg 2x"
-                        src="./images/team/img-4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        src="./images/team/img-4.jpg" alt="Михаил Ермаков" width="450" height="460">
                             <div class="team__wrapper">
                                 <h3 class="team-colg__name">Михаил Ермаков</h3> 
                                 <p class="team-work__name">UI Designer</p>
@@ -408,9 +408,8 @@
     <!-- Footer -->
 
     <footer class="footer">
-        <div class="container">
-            <ul class="footer__list list">
-                <li class="footer__item item">
+        <div class="footer__list container list">
+            <div class="footer__item item">
                     <a class="logo-footer link" href="/" lang="en"> Web<span class="logo-footer__footer-variable">Studio</span></a>
 
                     <address class="footer-address">
@@ -424,8 +423,8 @@
                             </li>
                         </ul>
                     </address>
-                </li>
-                <li class="footer__item footer-soc item">
+            </div>
+            <div class="footer__item footer-soc item">
                     <h3 class="footer-soc-title">присоединяйтесь</h3>
                     <ul class="footer-soc__list list">
                         <li class="footer-soc__item">
@@ -456,8 +455,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="footer__item footer-form item">
+            </div>
+            <div class="footer__item footer-form item">
                     <p class="footer-form-title">Подпишитесь на рассылку</p>
                     <form>
                         <div class="footer-form-wrap" role="group">
@@ -472,8 +471,7 @@
                             </button>
                         </div>
                     </form>
-                </li>
-            </ul>
+            </div>
         </div>
     </footer>
     <!-- modal window -->
@@ -540,5 +538,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

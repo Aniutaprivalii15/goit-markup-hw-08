@@ -12,6 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: baseline;
     }
 
     @media screen and (min-width: 1200px) {
@@ -64,7 +65,7 @@
     margin-top: 60px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 5px;
+        margin-top: 0;
     }
 
     @media screen and (min-width: 1200px) {
